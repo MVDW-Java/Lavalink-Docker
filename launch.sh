@@ -1,13 +1,5 @@
 #!/bin/sh
 
-function getTemplate() {
-    envsubst < ./$1
-}
-
-function generateTemplate() {
-    getTemplate ./lavalink.yml > ./application.yml
-}
-
-generateTemplate
+envsubst < ./lavalink.yml > ./application.yml
 
 java -jar Lavalink.jar
