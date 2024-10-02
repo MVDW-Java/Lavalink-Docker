@@ -1,6 +1,6 @@
 #!/bin/sh
 set -ae
-source ./settings.env
+. ./settings.env
 
 function printHelp() {
    echo "Lavalink docker image creator tool"
